@@ -1,0 +1,36 @@
+<html lang="pt-br"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pedro Paim">
+    <title>Página de comentários</title>
+    <link href="css/estilo.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Fórum</h1>            
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <form onsubmit="return false;">
+                <label>Nome:</label><br>
+                <input type="text" id="nome" placeholder="Nome do usuário"><br><br>
+                <label>Comentário:</label><br>
+                <textarea id="comentario" placeholder="Digite aqui seu comentário" cols="100" rows="8"></textarea><br><br>
+                <label>Cor do texto: </label>
+                <input type="color" id="cor-texto" value="#feb102"><br><br>
+                <label>Cor do fundo: </label>
+                <input type="color" id="cor-fundo" value="#ffffff"><br><br>
+                <button id="button" onclick="exibirComentario();">Enviar</button>
+            </form>
+            <br>
+            <hr>
+            <br>
+            <div id="result"></div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+
+</body></html>
